@@ -1,23 +1,28 @@
 {
-  "name": "calculator",
+  "name": "spa",
   "version": "1.0.0",
-  "description": "A calculator with node.js and express.js",
-  "main": "calculator.js",
+  "description": "",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp",
+    "build": "gulp --production"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rafaelledo/node-calculator.git"
-  },
-  "author": "Rafael Ledo",
+  "keywords": [],
+  "author": "RafaelLedo",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rafaelledo/node-calculator/issues"
-  },
-  "homepage": "https://github.com/rafaelledo/node-calculator#readme",
-  "dependencies": {
-    "body-parser": "^1.20.0",
-    "express": "^4.18.1"
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-preset-env": "1.6.1",
+    "font-awesome": "4.7.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "7.0.1",
+    "gulp-concat": "2.6.1",
+    "gulp-htmlmin": "4.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "3.0.0",
+    "gulp-uglifycss": "^1.1.0",
+    "gulp-watch": "5.0.1",
+    "gulp-webserver": "0.9.1",
+    "sass": "^1.56.1"
   }
 }
