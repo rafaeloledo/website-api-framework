@@ -1,3 +1,1 @@
-## MacOS calculator with React
-
-![](public/images/image.png)
+### todo list version 1 without persistence
