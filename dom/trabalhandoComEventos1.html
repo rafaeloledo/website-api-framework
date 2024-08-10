@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Trabalhando com Eventos #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    <div>
+        <!-- onclick={navegarEm5s(event) -->
+        <a espera="8" href="https://google.com.br">Google</a>
+    </div>
+    <script>
+        function navegarComEspera(e) {
+            e.preventDefault()
+            const tempo = e.target.getAttribute('espera')
+            console.log(`Saindo em ${tempo}s...`)
+            setTimeout(() => {
+                window.location.href = e.target.href
+            }, tempo * 1000);
+        }
+
+        // const a = document.querySelector('a')
+        // a.onclick = navegearComEspera
+
+        const a = document.querySelector('[espera]')
+        a.onclick = navegarComEspera
+    </script>
+</body>
