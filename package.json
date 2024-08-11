@@ -1,19 +1,5 @@
 {
-  "name": "schema-query",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "apollo-server": "^2.4.8",
-    "graphql": "^14.2.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.20"
+    "howler": "^2.2.3"
   }
 }
