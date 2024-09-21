@@ -2,12 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { createContext } from 'react'
+import MyComponent from './MyComponent'
+
+export const MyContext = createContext("")
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+		<MyContext.Provider value="VALOR-INICIAL_CONTEXT001">
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -28,7 +32,8 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </>
+			<MyComponent />
+		</MyContext.Provider>
   )
 }
 
